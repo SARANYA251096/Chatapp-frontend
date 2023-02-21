@@ -38,6 +38,17 @@ const Register = () => {
     <form onSubmit={handleRegistration}>
       <h2>Register</h2>
       <div className="form-group">
+        <label htmlFor="name">Name</label>
+        <input
+          type="text"
+          className="form-control"
+          id="name"
+          value={userDetails.name}
+          placeholder="Enter name"
+          onChange={(e) => handleForm({ name: e.target.value })}
+        />
+      </div>
+      <div className="form-group">
         <label htmlFor="email">Email</label>
         <input
           type="email"
@@ -59,17 +70,7 @@ const Register = () => {
           onChange={(e) => handleForm({ password: e.target.value })}
         />
       </div>
-      <div className="form-group">
-        <label htmlFor="name">Name</label>
-        <input
-          type="text"
-          className="form-control"
-          id="name"
-          value={userDetails.name}
-          placeholder="Enter name"
-          onChange={(e) => handleForm({ name: e.target.value })}
-        />
-      </div>
+
       <div className="form-group">
         <label htmlFor="mobileNumber">mobileNumber</label>
         <input
