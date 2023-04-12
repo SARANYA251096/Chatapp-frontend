@@ -20,7 +20,7 @@ import ResetPassword from "./Components/ResetPassword";
 // import Header from "./Components/Header";
 // import { useState } from "react";
 
-const socket = io.connect("http://localhost:4000");
+const socket = io.connect("https://chatapp-backend-lxyz.onrender.com/api");
 
 function App() {
   const [user, setUser, loading] = useFindUser();
