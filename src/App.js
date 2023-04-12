@@ -20,7 +20,7 @@ import ResetPassword from "./Components/ResetPassword";
 // import Header from "./Components/Header";
 // import { useState } from "react";
 
-const socket = io.connect("https://chatapp-backend-lxyz.onrender.com/api");
+const socket = io.connect("https://localhost:5000");
 
 function App() {
   const [user, setUser, loading] = useFindUser();
@@ -28,7 +28,7 @@ function App() {
   return (
     <UserContext.Provider value={{ user, setUser, loading }}>
       <div>
-        {/* <Header /> */}
+        
         <Routes>
           <Route element={<PublicRoutes />}>
             <Route path="/" element={<Login />} />
