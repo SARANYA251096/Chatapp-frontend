@@ -17,8 +17,7 @@ const Login = () => {
       event.preventDefault();
       const response = await axios.post(
         `${process.env.REACT_APP_BASE_URL}/signin`,
-        userCred,
-        { withCredentials: true }
+        userCred
       );
       if (response) {
         navigate("/chat");
