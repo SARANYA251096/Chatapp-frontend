@@ -24,8 +24,8 @@ const Register = () => {
       event.preventDefault();
       const response = await axios.post(
         `${process.env.REACT_APP_BASE_URL}/register`,
-        userDetails,
-        { withCredentials: true }
+        userDetails
+        
       );
       if (response) {
         navigate("/login");
