@@ -35,7 +35,7 @@ const Register = () => {
     }
   };
   return (
-    <form onSubmit={handleRegistration}>
+    <form onSubmit={handleRegistration} style={{ border: "1px solid white" }}>
       <h2>Register</h2>
       <div className="form-group">
         <label htmlFor="name">Name</label>

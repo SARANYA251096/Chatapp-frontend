@@ -1,6 +1,12 @@
+form{
+  width: 30%;
+  height: 550px;
+  margin-left: 490px;
+  margin-top: 20px;
+}
 .form-group {
   margin-bottom: 1rem;
-  margin-left: 35%;
+  margin-left: 13%;
   margin-top: 5px;
 }
 
@@ -9,14 +15,14 @@
 }
 
 .form-group input {
-    width: 45%;
+    width: 90%;
 }
 
 h2 {
     text-align: center;
     font-size: 35px;
-    /* margin-bottom: 10px; */
-    font-weight: 700;
+    padding: 10px;
+    font-weight: 600 !important;
     color: #e7e7e7;
 }
 

@@ -28,7 +28,7 @@ const Login = () => {
   };
 
   return (
-    <form action="#!" id="main" onSubmit={handleLogin}>
+    <form action="#!" id="main" onSubmit={handleLogin} style={{border:"1px solid white"}}>
       <h2>Login to your account</h2>
 
       <div class="input-parent">
