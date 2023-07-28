@@ -61,3 +61,44 @@ h2 {
   background-color: #0069d9;
   border-color: #0062cc;
 }
+
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 1150px) {
+  form {
+    /* Center the form horizontally */
+    margin: 20px auto;
+  }
+}
+
+@media screen and (max-width: 780px)  {
+  /* Adjust the maximum width to target the devices where the form should not appear at the extreme right-top */
+  form {
+    /* Center the form horizontally */
+     margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  form {
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+  }
+}
+@media screen and (max-width:380px){
+  .btn-primary{
+    width:auto;
+  }
+  form{
+    width:auto;
+  }
+}
+
+
+
+
+
+

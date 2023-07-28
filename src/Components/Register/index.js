@@ -35,57 +35,59 @@ const Register = () => {
     }
   };
   return (
-    <form onSubmit={handleRegistration} style={{ border: "1px solid white" }}>
-      <h2>Register</h2>
-      <div className="form-group">
-        <label htmlFor="name">Name</label>
-        <input
-          type="text"
-          className="form-control"
-          id="name"
-          value={userDetails.name}
-          placeholder="Enter name"
-          onChange={(e) => handleForm({ name: e.target.value })}
-        />
-      </div>
-      <div className="form-group">
-        <label htmlFor="email">Email</label>
-        <input
-          type="email"
-          className="form-control"
-          id="email"
-          value={userDetails.email}
-          placeholder="Enter email"
-          onChange={(e) => handleForm({ email: e.target.value })}
-        />
-      </div>
-      <div className="form-group">
-        <label htmlFor="password">Password</label>
-        <input
-          type="password"
-          className="form-control"
-          id="password"
-          value={userDetails.password}
-          placeholder="Password"
-          onChange={(e) => handleForm({ password: e.target.value })}
-        />
-      </div>
+    <div className="container5">
+      <form onSubmit={handleRegistration} style={{ border: "1px solid white" }}>
+        <h2>Register</h2>
+        <div className="form-group">
+          <label htmlFor="name">Name</label>
+          <input
+            type="text"
+            className="form-control"
+            id="name"
+            value={userDetails.name}
+            placeholder="Enter name"
+            onChange={(e) => handleForm({ name: e.target.value })}
+          />
+        </div>
+        <div className="form-group">
+          <label htmlFor="email">Email</label>
+          <input
+            type="email"
+            className="form-control"
+            id="email"
+            value={userDetails.email}
+            placeholder="Enter email"
+            onChange={(e) => handleForm({ email: e.target.value })}
+          />
+        </div>
+        <div className="form-group">
+          <label htmlFor="password">Password</label>
+          <input
+            type="password"
+            className="form-control"
+            id="password"
+            value={userDetails.password}
+            placeholder="Password"
+            onChange={(e) => handleForm({ password: e.target.value })}
+          />
+        </div>
 
-      <div className="form-group">
-        <label htmlFor="mobileNumber">mobileNumber</label>
-        <input
-          type="text"
-          className="form-control"
-          id="mobileNumber"
-          value={userDetails.mobileNumber}
-          placeholder="Enter mobile number"
-          onChange={(e) => handleForm({ mobileNumber: e.target.value })}
-        />
-      </div>
-      <button type="submit" className="btn btn-primary">
-        Submit
-      </button>
-    </form>
+        <div className="form-group">
+          <label htmlFor="mobileNumber">mobileNumber</label>
+          <input
+            type="text"
+            className="form-control"
+            id="mobileNumber"
+            value={userDetails.mobileNumber}
+            placeholder="Enter mobile number"
+            onChange={(e) => handleForm({ mobileNumber: e.target.value })}
+          />
+        </div>
+        <button type="submit" className="btn btn-primary">
+          Submit
+        </button>
+      </form>
+    </div>
   );
 };
 
